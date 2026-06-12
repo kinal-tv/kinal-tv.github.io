@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+(function () {
+    let path = decodeURIComponent(window.location.pathname);
+
+    // убираем слеши
+    path = path.replace(/^\/+/, "");
+
+    if (!path) {
+        window.location.replace("/");
+        return;
+    }
+
+    // 👉 твоя “кракозябра” → имя файла
+    // пример: Koloniia-2026-VW?.1tv → Koloniia-2026-VW.html
+
+    // убираем всё после странных символов типа ?, !
+    let clean = path.split("?")[0]
+                    .split("!")[0]
+                    .split("%")[0];
+
+    // если нет .html — добавляем
+    if (!clean.endsWith(".html")) {
+        clean = clean + ".html";
+    }
+
+    window.location.replace("/" + clean);
+})();
+</script>
+</head>
+<body></body>
+</html>
