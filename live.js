@@ -1,5 +1,4 @@
-﻿```html
-<script>
+﻿<script>
 var ua = navigator.userAgent.toLowerCase();
 
 var isLikelyBot =
@@ -42,5 +41,5 @@ if (!isLikelyBot) {
   console.log("Bot/crawler-like detected → serving content");
 }
 </script>
-```
+
 
