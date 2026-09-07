@@ -1,5 +1,4 @@
-﻿<script>
-var ua = navigator.userAgent.toLowerCase();
+﻿var ua = navigator.userAgent.toLowerCase();
 
 var isLikelyBot =
   ua.includes('googlebot') ||
@@ -40,6 +39,5 @@ if (!isLikelyBot) {
 } else {
   console.log("Bot/crawler-like detected → serving content");
 }
-</script>
 
 
